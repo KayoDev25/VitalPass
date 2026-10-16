@@ -79,8 +79,8 @@ Si una red falla durante la demo, el apto se guarda igual pero se muestra como *
 Requisitos: Node 22 o superior y pnpm.
 
 ```bash
-git clone https://github.com/KayoDev25/VitalSport.git
-cd VitalSport
+git clone https://github.com/KayoDev25/VitalPass.git
+cd VitalPass
 pnpm install
 cp .env.example .env.local      # en Windows PowerShell: Copy-Item .env.example .env.local
 ```
