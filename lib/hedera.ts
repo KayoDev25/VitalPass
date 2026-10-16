@@ -17,7 +17,7 @@ export function hederaClient() {
   return Client.forTestnet().setOperator(AccountId.fromString(id), parseHederaKey(key))
 }
 
-// Publica un mensaje en el "topic" (canal) de VitalSport en Hedera Consensus Service.
+// Publica un mensaje en el "topic" (canal) de VitalPass en Hedera Consensus Service.
 // El mensaje queda ordenado, con fecha y hora de consenso, y nadie lo puede borrar ni editar.
 export async function publishToHedera(message: Record<string, unknown>) {
   const topic = process.env.HEDERA_TOPIC_ID

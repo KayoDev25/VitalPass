@@ -1,6 +1,6 @@
 // Forma de un apto guardado en la base (tabla "aptos" en supabase/schema.sql).
 export type AptoRecord = {
-  id: string // código corto que va en el QR, ej: VS-1A2B3C4D
+  id: string // código corto que va en el QR, ej: VP-1A2B3C4D
   athlete_name: string
   club: string
   blood_type: string
@@ -46,7 +46,7 @@ export const links = {
 
 // Atleta de ejemplo para que la demo funcione aunque falle internet o la base.
 // Es 100% inventado y se muestra marcado como DATO SIMULADO.
-export const DEMO_ID = 'VS-DEMO'
+export const DEMO_ID = 'VP-DEMO'
 export const DEMO_RECORD: AptoRecord = {
   id: DEMO_ID,
   athlete_name: 'Lucía Fernández (ficticia)',

@@ -47,7 +47,7 @@ export async function POST(request: Request) {
   // Huella de la ficha completa: si alguien cambia un solo dato, la huella ya no coincide.
   const ficha = { ...form, apto: Boolean(form.apto), issuedAt, validUntil }
   const recordHash = sha256(JSON.stringify(ficha, Object.keys(ficha).sort()))
-  const id = `VS-${recordHash.slice(0, 8).toUpperCase()}`
+  const id = `VP-${recordHash.slice(0, 8).toUpperCase()}`
 
   // 2) Hedera: registro de auditoría (quién firmó qué y cuándo).
   let hedera_tx: string | null = null
@@ -55,7 +55,7 @@ export async function POST(request: Request) {
   let hedera_error: string | null = null
   try {
     const result = await publishToHedera({
-      app: 'VitalSportID',
+      app: 'VitalPass',
       v: 1,
       id,
       athleteIdHash,

@@ -1,4 +1,4 @@
-// Crea el "topic" (canal) de VitalSport en Hedera testnet y publica un primer mensaje.
+// Crea el "topic" (canal) de VitalPass en Hedera testnet y publica un primer mensaje.
 // Uso: pnpm hedera:setup
 // Necesita en .env.local: HEDERA_OPERATOR_ID y HEDERA_OPERATOR_KEY (de portal.hedera.com).
 import { AccountId, Client, PrivateKey, TopicCreateTransaction, TopicMessageSubmitTransaction } from '@hashgraph/sdk'
@@ -25,7 +25,7 @@ try {
   let topicId = process.env.HEDERA_TOPIC_ID
   if (!topicId) {
     console.log('Creando topic en Hedera testnet…')
-    const tx = await new TopicCreateTransaction().setTopicMemo('VitalSport ID - aptos medicos deportivos').execute(client)
+    const tx = await new TopicCreateTransaction().setTopicMemo('VitalPass - aptos medicos deportivos').execute(client)
     const receipt = await tx.getReceipt(client)
     topicId = receipt.topicId.toString()
     setEnv('HEDERA_TOPIC_ID', topicId)
@@ -37,7 +37,7 @@ try {
   console.log('Publicando mensaje de prueba…')
   const msg = await new TopicMessageSubmitTransaction()
     .setTopicId(topicId)
-    .setMessage(JSON.stringify({ app: 'VitalSportID', v: 1, type: 'setup', at: new Date().toISOString() }))
+    .setMessage(JSON.stringify({ app: 'VitalPass', v: 1, type: 'setup', at: new Date().toISOString() }))
     .execute(client)
   await msg.getReceipt(client)
   const txId = msg.transactionId.toString()

@@ -1,4 +1,4 @@
-# VitalSport ID — Pasaporte médico deportivo verificable
+# VitalPass — Pasaporte médico deportivo verificable
 
 Ideathon **NEA Tech 2026** (Corrientes) · Tracks **Stellar** y **Hedera**
 
@@ -72,7 +72,7 @@ Médico ──> /api/emitir ──┬─> Hedera HCS: {hash ficha, hash DNI, mat
                                               └─> Contrato Stellar: get(hash DNI) en vivo -> ¿coincide la huella? ¿vigente?
 ```
 
-Si una red falla durante la demo, el apto se guarda igual pero se muestra como **SIMULADO / no registrado**: nunca se muestra un link inventado. El atleta `VS-DEMO` es un ejemplo ficticio que funciona sin conexión a la base.
+Si una red falla durante la demo, el apto se guarda igual pero se muestra como **SIMULADO / no registrado**: nunca se muestra un link inventado. El atleta `VP-DEMO` es un ejemplo ficticio que funciona sin conexión a la base.
 
 ## 7. Instalación (local)
 
@@ -102,7 +102,8 @@ En Vercel: importá el repositorio, cargá las mismas variables de `.env.local` 
 ## 10. Qué existía antes y qué se hizo en la hackathon
 
 - **Antes:** una plantilla propia de Next.js + Tailwind + shadcn + Supabase, tomada de un proyecto personal anterior (otra temática). Se reutilizó solo la estructura técnica.
-- **Durante la hackathon (15–16/10):** todo lo de VitalSport ID: contrato Soroban, integración con Hedera HCS y Stellar, pantallas de emisión, credencial y validador, esquema de base de datos y documentación.
+- **Nombre:** el proyecto empezó como "VitalSport ID" y se renombró a **VitalPass**. Por eso el memo del topic de Hedera, el primer mensaje y el comentario del contrato todavía dicen "VitalSport" (lo que está en la blockchain no se puede editar).
+- **Durante la hackathon (15–16/10):** todo lo de VitalPass: contrato Soroban, integración con Hedera HCS y Stellar, pantallas de emisión, credencial y validador, esquema de base de datos y documentación.
 
 ## 11. Uso de inteligencia artificial
 
