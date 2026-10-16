@@ -14,3 +14,8 @@ __v0_jsx-dev-runtime.ts
 node_modules
 .next/
 .DS_Store
+# Rust (contrato)
+target/
+
+# El lockfile lo genera cada uno con pnpm install (evita conflictos en la hackathon)
+pnpm-lock.yaml

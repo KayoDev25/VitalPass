@@ -1,14 +1,14 @@
 import { createClient } from '@supabase/supabase-js'
 
-// Estas dos variables salen del archivo .env.local (en tu computadora)
-// o de las "Environment Variables" de Vercel (cuando la página está publicada).
-// Empiezan con NEXT_PUBLIC_ porque la página las necesita en el navegador.
-// La clave "anon" es pública a propósito: lo que puede hacer lo limitan
-// los permisos que definimos en supabase/schema.sql.
-const url = process.env.NEXT_PUBLIC_SUPABASE_URL
-const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+// Esta conexión SOLO se usa en el servidor (carpeta app/api).
+// Usa la clave "service_role" / "secret", que puede leer y escribir todo:
+// por eso NO lleva NEXT_PUBLIC_ adelante (así nunca llega al navegador).
+// Los datos de salud quedan protegidos: la clave pública no tiene ningún permiso
+// sobre la tabla (ver supabase/schema.sql).
+const url = process.env.SUPABASE_URL
+const key = process.env.SUPABASE_SERVICE_ROLE_KEY
 
-export const supabase = url && key ? createClient(url, key) : null
+export const supabaseAdmin = url && key ? createClient(url, key, { auth: { persistSession: false } }) : null
 
-export const MISSING_CONFIG_MESSAGE =
-  'Falta conectar Supabase. Revisá que exista el archivo .env.local con NEXT_PUBLIC_SUPABASE_URL y NEXT_PUBLIC_SUPABASE_ANON_KEY, y reiniciá "pnpm dev".'
+export const MISSING_SUPABASE =
+  'Falta conectar Supabase: revisá SUPABASE_URL y SUPABASE_SERVICE_ROLE_KEY en .env.local (o en Vercel) y reiniciá "pnpm dev".'
