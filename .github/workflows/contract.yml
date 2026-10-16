@@ -37,10 +37,19 @@ jobs:
             exit 1
           fi
 
+      - name: Instalar stellar-cli (herramienta oficial de Stellar)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download --repo stellar/stellar-cli --pattern 'stellar-cli-*-x86_64-unknown-linux-gnu.tar.gz' --dir /tmp/stellar
+          tar -xzf /tmp/stellar/*.tar.gz -C /tmp/stellar
+          sudo install /tmp/stellar/stellar /usr/local/bin/stellar
+          stellar --version
+
       - name: Compilar a WebAssembly
         run: |
           set -o pipefail
-          if ! cargo build --target wasm32v1-none --release 2>&1 | tee build.log; then
+          if ! stellar contract build 2>&1 | tee build.log; then
             MSG=$(grep -v "Compiling\|Downloaded\|Downloading" build.log | tail -c 3500 | sed ':a;N;$!ba;s/%/%25/g;s/\n/%0A/g')
             echo "::error title=cargo build::$MSG"
             exit 1
