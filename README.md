@@ -4,7 +4,7 @@ Ideathon **NEA Tech 2026** (Corrientes) · Tracks **Stellar** y **Hedera**
 
 > El apto médico que se verifica en la cancha, no en una fotocopia.
 
-- **Demo:** `PENDIENTE: link de Vercel`
+- **Demo:** https://vital-sport-4rmor5itq-tobias-projects-299b10ad.vercel.app/
 - **Video (≤ 5 min):** `PENDIENTE`
 - **Pitch deck (PDF):** `PENDIENTE`
 - **Evidencia de validación:** [`docs/validacion.md`](docs/validacion.md)
@@ -17,9 +17,11 @@ En las ligas formativas y amateurs, el apto médico se presenta en papel o fotoc
 
 | Dato | Estado |
 |---|---|
-| Cantidad de atletas y clubes en el NEA | **SUPUESTO** — falta fuente |
+| Cantidad de deportistas en el NEA | Aprox. 50.000 según la Secretaría de Deportes — **falta link a la fuente** |
 | Porcentaje que compite con apto vencido o falso | **SUPUESTO** — falta fuente |
-| Testimonios de clubes, árbitros y médicos | ver [`docs/validacion.md`](docs/validacion.md) |
+| Entrevistas | 1 realizada (entrenador de rugby, Club San Patricio, Corrientes) — ver [`docs/validacion.md`](docs/validacion.md) |
+
+**Lo que encontramos al validar:** en rugby, la Unión Argentina de Rugby (UAR) no permite habilitar a un jugador en la planilla si no completó los estudios médicos que exige. El control existe, pero **cada vez que un jugador cambia de club tiene que hacer todos los trámites de nuevo**. Eso apunta a un dolor concreto que VitalPass resuelve: un apto **portable**, que viaja con el atleta y que cualquier club o liga puede verificar sin repetir papeles.
 
 ## 2. Solución
 
@@ -45,7 +47,7 @@ En las ligas formativas y amateurs, el apto médico se presenta en papel o fotoc
 | Cuenta emisora | [`GA6UR7AOXNUD6XACPGSMAU5HD4EIS3G5M6WS5PLRFMYLS77W3GWSTKSR`](https://stellar.expert/explorer/testnet/account/GA6UR7AOXNUD6XACPGSMAU5HD4EIS3G5M6WS5PLRFMYLS77W3GWSTKSR) |
 | Transacción: subida del código del contrato | [`a9f81387…238d52`](https://stellar.expert/explorer/testnet/tx/a9f81387d707950aa058bda8ce7ef58cd4a9223b1e83168a4f851f86ae238d52) |
 | Transacción: despliegue del contrato | [`a4601315…baf057`](https://stellar.expert/explorer/testnet/tx/a4601315f4009e854d0c509d699a284880a517d6afbb666d6a20b344c1baf057) |
-| Transacción de registro de un apto (`register`) | `PENDIENTE` |
+| Transacción de registro de un apto emitido desde la app (`VP-FA6C9122`, llamada a `register`) | [`5b66a666…6d34`](https://stellar.expert/explorer/testnet/tx/5b66a666bbc5aa980413fd2e5713657deb6c38267a3e560c2c535501c10b6d34) |
 
 ### Hedera
 | Qué | Valor |
@@ -53,7 +55,7 @@ En las ligas formativas y amateurs, el apto médico se presenta en papel o fotoc
 | Cuenta (operator) | [`0.0.10999895`](https://hashscan.io/testnet/account/0.0.10999895) |
 | Topic HCS | [`0.0.11052106`](https://hashscan.io/testnet/topic/0.0.11052106) |
 | Transacción (mensaje de inicialización del topic) | [`0.0.10999895@1792176018.485508778`](https://hashscan.io/testnet/transaction/0.0.10999895-1792176018-485508778) |
-| Transacción de un apto emitido desde la app | `PENDIENTE` |
+| Transacción de un apto emitido desde la app (`VP-FA6C9122`) | [`0.0.10999895@1792184052.221661275`](https://hashscan.io/testnet/transaction/0.0.10999895-1792184052-221661275) |
 
 ## 5. Herramientas usadas
 
@@ -113,8 +115,21 @@ Usamos asistentes de IA (Claude, de Anthropic) para escribir y revisar código, 
 
 - El portal médico no tiene login en esta demo. Próximo paso: verificar la matrícula del médico contra el colegio médico y que cada médico firme con su propia cuenta.
 - La ficha de emergencia se ve con el código del QR. Próximo paso: acceso por rol (árbitro, servicio médico).
-- Piloto con una liga local (`PENDIENTE` según validación).
+- Piloto con una liga o unión local. Primer candidato a explorar: rugby, donde ya existe un control centralizado (UAR) y el dolor es repetir trámites al cambiar de club. `PENDIENTE` de confirmar.
 
-## Equipo
+## Modelo de negocio (hipótesis a validar)
 
-`PENDIENTE`
+- **Usuarios:** atletas, médicos, árbitros y profes.
+- **Quién paga:**
+  - **Clubes o deportistas:** una tarifa fija por cada certificado (emisión nueva, renovación, etc.).
+  - **Médicos:** una suscripción para usar la plataforma de emisión. La habilitación para emitir depende de que la matrícula esté verificada, no del pago.
+- **A futuro:** el cobro se puede hacer en USDC directamente en el contrato de Stellar, de modo que el pago y el registro ocurran en la misma transacción.
+
+## Equipo — Grupo 14
+
+| Integrante | Rol |
+|---|---|
+| Tobías Roncati | Programación, diseño y pitch |
+| Leia Orgoñ | Programación y diseño |
+| Joaquín Ramírez | Validación y pitch |
+| Luciano Bellon | Negocio y validación |
