@@ -41,9 +41,11 @@ En las ligas formativas y amateurs, el apto médico se presenta en papel o fotoc
 ### Stellar
 | Qué | Valor |
 |---|---|
-| Contrato (ID) | `PENDIENTE` — [Stellar Expert](https://stellar.expert/explorer/testnet) |
-| Cuenta emisora | `PENDIENTE` |
-| Transacción de registro de un apto | `PENDIENTE` |
+| Contrato (ID) | [`CDR7UT2BBRDDOJFM2ZU2S6RCQVGXEATWHGXXPNBRTSWNORJB6K5JQ3IG`](https://stellar.expert/explorer/testnet/contract/CDR7UT2BBRDDOJFM2ZU2S6RCQVGXEATWHGXXPNBRTSWNORJB6K5JQ3IG) |
+| Cuenta emisora | [`GA6UR7AOXNUD6XACPGSMAU5HD4EIS3G5M6WS5PLRFMYLS77W3GWSTKSR`](https://stellar.expert/explorer/testnet/account/GA6UR7AOXNUD6XACPGSMAU5HD4EIS3G5M6WS5PLRFMYLS77W3GWSTKSR) |
+| Transacción: subida del código del contrato | [`a9f81387…238d52`](https://stellar.expert/explorer/testnet/tx/a9f81387d707950aa058bda8ce7ef58cd4a9223b1e83168a4f851f86ae238d52) |
+| Transacción: despliegue del contrato | [`a4601315…baf057`](https://stellar.expert/explorer/testnet/tx/a4601315f4009e854d0c509d699a284880a517d6afbb666d6a20b344c1baf057) |
+| Transacción de registro de un apto (`register`) | `PENDIENTE` |
 
 ### Hedera
 | Qué | Valor |
