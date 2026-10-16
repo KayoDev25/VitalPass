@@ -4,7 +4,7 @@ Ideathon **NEA Tech 2026** (Corrientes) · Tracks **Stellar** y **Hedera**
 
 > El apto médico que se verifica en la cancha, no en una fotocopia.
 
-- **Demo:** https://vital-sport-4rmor5itq-tobias-projects-299b10ad.vercel.app/
+- **Demo:** https://vital-sport.vercel.app
 - **Video (≤ 5 min):** `PENDIENTE`
 - **Pitch deck (PDF):** `PENDIENTE`
 - **Evidencia de validación:** [`docs/validacion.md`](docs/validacion.md)
@@ -21,7 +21,7 @@ En las ligas formativas y amateurs, el apto médico se presenta en papel o fotoc
 | Porcentaje que compite con apto vencido o falso | **SUPUESTO** — falta fuente |
 | Entrevistas | 1 realizada (entrenador de rugby, Club San Patricio, Corrientes) — ver [`docs/validacion.md`](docs/validacion.md) |
 
-**Lo que encontramos al validar:** en rugby, la Unión Argentina de Rugby (UAR) no permite habilitar a un jugador en la planilla si no completó los estudios médicos que exige. El control existe, pero **cada vez que un jugador cambia de club tiene que hacer todos los trámites de nuevo**. Eso apunta a un dolor concreto que VitalPass resuelve: un apto **portable**, que viaja con el atleta y que cualquier club o liga puede verificar sin repetir papeles.
+**Lo que confirmamos al validar:** el entrenador de rugby del Club San Patricio (Corrientes) nos confirmó que el apto médico es un requisito obligatorio: sin los estudios que exige la Unión Argentina de Rugby (UAR), el jugador no puede ser habilitado en la planilla. Y la gestión es pesada: **cada vez que un jugador cambia de club, tiene que hacer todos los trámites de nuevo**. VitalPass resuelve ese dolor con un apto **portable y verificable**, que viaja con el atleta y que cualquier club o liga puede comprobar sin repetir papeles.
 
 ## 2. Solución
 
@@ -113,7 +113,7 @@ Usamos asistentes de IA (Claude, de Anthropic) para escribir y revisar código, 
 
 ## 12. Limitaciones y próximos pasos
 
-- El portal médico no tiene login en esta demo. Próximo paso: verificar la matrícula del médico contra el colegio médico y que cada médico firme con su propia cuenta.
+- El portal médico no tiene login en esta demo. Próximo paso: verificar la matrícula de cada médico en REFEPS y que cada uno firme con su propia cuenta.
 - La ficha de emergencia se ve con el código del QR. Próximo paso: acceso por rol (árbitro, servicio médico).
 - Piloto con una liga o unión local. Primer candidato a explorar: rugby, donde ya existe un control centralizado (UAR) y el dolor es repetir trámites al cambiar de club. `PENDIENTE` de confirmar.
 
@@ -122,7 +122,8 @@ Usamos asistentes de IA (Claude, de Anthropic) para escribir y revisar código, 
 - **Usuarios:** atletas, médicos, árbitros y profes.
 - **Quién paga:**
   - **Clubes o deportistas:** una tarifa fija por cada certificado (emisión nueva, renovación, etc.).
-  - **Médicos:** una suscripción para usar la plataforma de emisión. La habilitación para emitir depende de que la matrícula esté verificada, no del pago.
+  - **Médicos:** una suscripción para usar la plataforma de emisión.
+- **Quién puede emitir:** solo médicos con la **matrícula verificada en la Red Federal de Registros de Profesionales de la Salud (REFEPS)**. La suscripción da acceso a la herramienta; la habilitación para firmar aptos depende únicamente de la matrícula, no del pago.
 - **A futuro:** el cobro se puede hacer en USDC directamente en el contrato de Stellar, de modo que el pago y el registro ocurran en la misma transacción.
 
 ## Equipo — Grupo 14

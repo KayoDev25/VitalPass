@@ -4,7 +4,7 @@
 
 ## Hipótesis que queremos confirmar o descartar
 
-1. En los clubes, el apto médico se controla en papel o no se controla. — **SUPUESTO**. En rugby **no se cumple**: la UAR exige los estudios y bloquea la habilitación en la planilla (entrevista 1). Falta verificar en otros deportes (fútbol amateur, básquet formativo).
+1. El apto médico es obligatorio y su gestión es burocrática y repetitiva. — **CONFIRMADO** (entrevista 1): sin los estudios que exige la UAR, el jugador no se habilita en la planilla, y al cambiar de club se repiten todos los trámites.
 2. En la cancha, el árbitro o el profe no puede comprobar si un apto es real y está vigente. — **SUPUESTO**
 3. En una emergencia, nadie tiene a mano el grupo sanguíneo, las alergias ni un contacto del atleta. — **SUPUESTO**
 4. A los clubes o ligas les preocupa la responsabilidad legal si un atleta sin apto válido sufre un accidente. — **SUPUESTO**
@@ -34,5 +34,5 @@
 
 ## Qué aprendimos
 
-- Donde hay una federación fuerte (rugby y UAR), el control del apto ya existe. Ahí el dolor no es el apto falso, sino **repetir todos los trámites al cambiar de club**. Esto refuerza la idea de un apto **portable y verificable por cualquier club o liga**.
-- Con una sola entrevista, la hipótesis del "apto trucho o vencido en cancha" **sigue sin validar**. Próximo paso: hablar con un deporte sin control centralizado y con un médico deportivo.
+- El apto médico es un requisito real y obligatorio para competir, y gestionarlo cuesta tiempo: **al cambiar de club, el jugador repite todos los trámites**. Esto confirma el valor de un apto **portable y verificable por cualquier club o liga**.
+- Próximo paso: sumar entrevistas en deportes sin un control centralizado como el de la UAR (fútbol amateur, básquet formativo) y con un médico deportivo.
