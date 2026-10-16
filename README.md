@@ -48,9 +48,10 @@ En las ligas formativas y amateurs, el apto médico se presenta en papel o fotoc
 ### Hedera
 | Qué | Valor |
 |---|---|
-| Cuenta (operator) | `PENDIENTE` |
-| Topic HCS | `PENDIENTE` — [HashScan](https://hashscan.io/testnet) |
-| Transacción de un apto | `PENDIENTE` |
+| Cuenta (operator) | [`0.0.10999895`](https://hashscan.io/testnet/account/0.0.10999895) |
+| Topic HCS | [`0.0.11052106`](https://hashscan.io/testnet/topic/0.0.11052106) |
+| Transacción (mensaje de inicialización del topic) | [`0.0.10999895@1792176018.485508778`](https://hashscan.io/testnet/transaction/0.0.10999895-1792176018-485508778) |
+| Transacción de un apto emitido desde la app | `PENDIENTE` |
 
 ## 5. Herramientas usadas
 
