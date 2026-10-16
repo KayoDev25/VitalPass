@@ -1,4 +1,4 @@
-# VitalSport ID — Pasaporte médico deportivo verificable
+# VitalPass — Pasaporte médico deportivo verificable
 
 Ideathon **NEA Tech 2026** (Corrientes) · Tracks **Stellar** y **Hedera**
 
@@ -41,16 +41,19 @@ En las ligas formativas y amateurs, el apto médico se presenta en papel o fotoc
 ### Stellar
 | Qué | Valor |
 |---|---|
-| Contrato (ID) | `PENDIENTE` — [Stellar Expert](https://stellar.expert/explorer/testnet) |
-| Cuenta emisora | `PENDIENTE` |
-| Transacción de registro de un apto | `PENDIENTE` |
+| Contrato (ID) | [`CDR7UT2BBRDDOJFM2ZU2S6RCQVGXEATWHGXXPNBRTSWNORJB6K5JQ3IG`](https://stellar.expert/explorer/testnet/contract/CDR7UT2BBRDDOJFM2ZU2S6RCQVGXEATWHGXXPNBRTSWNORJB6K5JQ3IG) |
+| Cuenta emisora | [`GA6UR7AOXNUD6XACPGSMAU5HD4EIS3G5M6WS5PLRFMYLS77W3GWSTKSR`](https://stellar.expert/explorer/testnet/account/GA6UR7AOXNUD6XACPGSMAU5HD4EIS3G5M6WS5PLRFMYLS77W3GWSTKSR) |
+| Transacción: subida del código del contrato | [`a9f81387…238d52`](https://stellar.expert/explorer/testnet/tx/a9f81387d707950aa058bda8ce7ef58cd4a9223b1e83168a4f851f86ae238d52) |
+| Transacción: despliegue del contrato | [`a4601315…baf057`](https://stellar.expert/explorer/testnet/tx/a4601315f4009e854d0c509d699a284880a517d6afbb666d6a20b344c1baf057) |
+| Transacción de registro de un apto (`register`) | `PENDIENTE` |
 
 ### Hedera
 | Qué | Valor |
 |---|---|
-| Cuenta (operator) | `PENDIENTE` |
-| Topic HCS | `PENDIENTE` — [HashScan](https://hashscan.io/testnet) |
-| Transacción de un apto | `PENDIENTE` |
+| Cuenta (operator) | [`0.0.10999895`](https://hashscan.io/testnet/account/0.0.10999895) |
+| Topic HCS | [`0.0.11052106`](https://hashscan.io/testnet/topic/0.0.11052106) |
+| Transacción (mensaje de inicialización del topic) | [`0.0.10999895@1792176018.485508778`](https://hashscan.io/testnet/transaction/0.0.10999895-1792176018-485508778) |
+| Transacción de un apto emitido desde la app | `PENDIENTE` |
 
 ## 5. Herramientas usadas
 
@@ -69,7 +72,7 @@ Médico ──> /api/emitir ──┬─> Hedera HCS: {hash ficha, hash DNI, mat
                                               └─> Contrato Stellar: get(hash DNI) en vivo -> ¿coincide la huella? ¿vigente?
 ```
 
-Si una red falla durante la demo, el apto se guarda igual pero se muestra como **SIMULADO / no registrado**: nunca se muestra un link inventado. El atleta `VS-DEMO` es un ejemplo ficticio que funciona sin conexión a la base.
+Si una red falla durante la demo, el apto se guarda igual pero se muestra como **SIMULADO / no registrado**: nunca se muestra un link inventado. El atleta `VP-DEMO` es un ejemplo ficticio que funciona sin conexión a la base.
 
 ## 7. Instalación (local)
 
@@ -99,7 +102,8 @@ En Vercel: importá el repositorio, cargá las mismas variables de `.env.local` 
 ## 10. Qué existía antes y qué se hizo en la hackathon
 
 - **Antes:** una plantilla propia de Next.js + Tailwind + shadcn + Supabase, tomada de un proyecto personal anterior (otra temática). Se reutilizó solo la estructura técnica.
-- **Durante la hackathon (15–16/10):** todo lo de VitalSport ID: contrato Soroban, integración con Hedera HCS y Stellar, pantallas de emisión, credencial y validador, esquema de base de datos y documentación.
+- **Nombre:** el proyecto empezó como "VitalSport ID" y se renombró a **VitalPass**. Por eso el memo del topic de Hedera, el primer mensaje y el comentario del contrato todavía dicen "VitalSport" (lo que está en la blockchain no se puede editar).
+- **Durante la hackathon (15–16/10):** todo lo de VitalPass: contrato Soroban, integración con Hedera HCS y Stellar, pantallas de emisión, credencial y validador, esquema de base de datos y documentación.
 
 ## 11. Uso de inteligencia artificial
 

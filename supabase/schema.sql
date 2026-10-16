@@ -1,11 +1,11 @@
 -- ============================================================
--- VitalSport ID - tabla de aptos médicos
+-- VitalPass - tabla de aptos médicos
 -- Pegar completo en Supabase > SQL Editor > New query > Run
 -- Usar un proyecto de Supabase NUEVO (no el de REJOAR).
 -- ============================================================
 
 create table if not exists aptos (
-  id               text primary key,          -- código corto del QR, ej: VS-1A2B3C4D
+  id               text primary key,          -- código corto del QR, ej: VP-1A2B3C4D
   athlete_name     text not null,
   club             text not null,
   blood_type       text not null,

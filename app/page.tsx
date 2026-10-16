@@ -25,7 +25,7 @@ export default function Page() {
             El apto médico que se verifica en la cancha, no en una fotocopia.
           </h1>
           <p className="mt-5 max-w-xl text-lg text-slate-600">
-            VitalSport ID conecta al médico, al club y al árbitro con un registro que ninguno de ellos puede alterar por su cuenta.
+            VitalPass conecta al médico, al club y al árbitro con un registro que ninguno de ellos puede alterar por su cuenta.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a href="/medico" className="flex h-12 items-center justify-center gap-2 rounded-full bg-[#0f3d2e] px-6 font-semibold text-white">

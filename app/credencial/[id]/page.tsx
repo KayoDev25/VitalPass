@@ -36,7 +36,7 @@ export default function CredencialPage() {
           <>
             <article className="overflow-hidden rounded-[2rem] bg-[#0f3d2e] text-white shadow-xl">
               <div className="flex items-center justify-between px-6 pt-6">
-                <span className="text-sm font-semibold tracking-wide text-emerald-200">VitalSport ID</span>
+                <span className="text-sm font-semibold tracking-wide text-emerald-200">VitalPass</span>
                 {data?.demo && <span className="rounded bg-amber-300 px-2 py-0.5 text-[10px] font-bold uppercase text-amber-950">Dato simulado</span>}
               </div>
               <div className="flex items-center gap-4 px-6 py-5">
