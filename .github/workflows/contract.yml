@@ -39,7 +39,12 @@ jobs:
 
       - name: Compilar a WebAssembly
         run: |
-          cargo build --target wasm32v1-none --release
+          set -o pipefail
+          if ! cargo build --target wasm32v1-none --release 2>&1 | tee build.log; then
+            MSG=$(grep -v "Compiling\|Downloaded\|Downloading" build.log | tail -c 3500 | sed ':a;N;$!ba;s/%/%25/g;s/\n/%0A/g')
+            echo "::error title=cargo build::$MSG"
+            exit 1
+          fi
           cp target/wasm32v1-none/release/apto_registry.wasm ../apto_registry.wasm
           ls -la ../apto_registry.wasm
 
