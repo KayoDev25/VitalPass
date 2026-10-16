@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'REJOAR | Becas que abren caminos',
-  description: 'Encontrá becas, postulá con credenciales verificables y financiá nuevas oportunidades.',
+  title: 'VitalSport ID | Apto médico deportivo verificable',
+  description: 'Aptos médicos deportivos verificables en cancha con QR, registrados en Hedera y Stellar.',
   generator: 'v0.app',
   icons: {
     icon: [
