@@ -1,0 +1,50 @@
+# Compila y prueba el contrato de Stellar en los servidores de GitHub,
+# así nadie del equipo necesita instalar Rust en su computadora.
+# El archivo compilado (.wasm) se guarda en contracts/apto_registry.wasm.
+name: Contrato Stellar
+
+on:
+  push:
+    paths:
+      - "contracts/apto-registry/**"
+      - ".github/workflows/contract.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: contracts/apto-registry
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preparar Rust
+        run: |
+          rustup update stable
+          rustup default stable
+          rustup target add wasm32v1-none
+
+      - name: Tests del contrato
+        run: cargo test
+
+      - name: Compilar a WebAssembly
+        run: |
+          cargo build --target wasm32v1-none --release
+          cp target/wasm32v1-none/release/apto_registry.wasm ../apto_registry.wasm
+          ls -la ../apto_registry.wasm
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: apto_registry
+          path: contracts/apto_registry.wasm
+
+      - name: Guardar el .wasm en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ../apto_registry.wasm
+          git diff --cached --quiet || (git commit -m "build: wasm del contrato [skip ci]" && git push)
