@@ -4,7 +4,7 @@ Ideathon **NEA Tech 2026** (Corrientes) · Tracks **Stellar** y **Hedera**
 
 > El apto médico que se verifica en la cancha, no en una fotocopia.
 
-- **Demo:** `vital-sport.vercel.app`
+- **Demo:** https://vital-sport.vercel.app
 - **Video (≤ 5 min):** `PENDIENTE`
 - **Pitch deck (PDF):** `PENDIENTE`
 - **Evidencia de validación:** [`docs/validacion.md`](docs/validacion.md)
@@ -13,13 +13,33 @@ Ideathon **NEA Tech 2026** (Corrientes) · Tracks **Stellar** y **Hedera**
 
 ## 1. Problema
 
-En las ligas formativas y amateurs, el apto médico se presenta en papel o fotocopia. En la cancha, el árbitro o el profe no tiene forma de comprobar que el apto es real, de quién es y si está vigente. Si hay una emergencia (golpe en la cabeza, descompensación), nadie tiene a mano el grupo sanguíneo, las alergias ni un contacto.
+En las ligas formativas y amateurs, el apto médico se presenta en papel o fotocopia. En la cancha, el árbitro o el profe no tiene forma de comprobar que el apto es real, de quién es y si está vigente. Si hay una emergencia (golpe en la cabeza, descompensación), nadie tiene a mano el grupo sanguíneo, las alergias ni un contacto. Y cada vez que un jugador cambia de club, repite todos los trámites.
 
-| Dato | Estado |
+### Evidencia
+
+**1. Los certificados falsos existen, a escala (caso Liga Mendocina de Fútbol).**
+Una cardióloga denunció que usaban su firma y su sello en estudios que nunca hizo, y un peritaje caligráfico lo confirmó. Hay más de 900 documentos bajo sospecha, alrededor de 800 jugadores potencialmente afectados y al menos 112 planillas con firmas falsificadas. En allanamientos se encontraron certificados falsificados listos para usar ([Los Andes, 2/10/2025](https://www.losandes.com.ar/deportes/escandalo-la-liga-mendocina-peritajes-confirmaron-firmas-falsas-certificados-medicos-n5965005)). La empresa que emitía los aptos no estaba habilitada por el Ministerio de Salud provincial; prestó el servicio desde 2022 hasta mediados de 2025 e incluía a jugadores menores de edad ([Diario UNO, 18/2/2026](https://www.diariouno.com.ar/politica/certificados-truchos-la-liga-mendocina-la-empresa-que-los-aptos-fisicos-no-estaba-habilitada-n1527619)).
+
+**2. El apto es obligatorio y su gestión se repite (entrevista propia).**
+Un entrenador de rugby del Club San Patricio (Corrientes) nos confirmó que, sin los estudios que exige la Unión Argentina de Rugby (UAR), el jugador no puede ser habilitado en la planilla, y que **cada vez que un jugador cambia de club tiene que hacer todos los trámites de nuevo**. Detalle en [`docs/validacion.md`](docs/validacion.md).
+
+**3. El mercado es grande y mayormente no federado (ENAFYD 2023, UNSAM–UNaM).**
+Según la [Encuesta Nacional sobre Actividad Física y Deportes 2023](https://edicionesfhycs.unam.edu.ar/wp-content/uploads/2025/05/ENAFYD-2023-VF-con-ISBN.pdf) (5.458 casos, margen de error del 4 %):
+- En el NEA, el **45,7 %** de los encuestados hace actividad física o deporte de forma regular, y el fútbol tiene ahí la práctica más alta del país.
+- A nivel nacional, el **37,7 %** de quienes practican participa de competencias organizadas, y el **44,2 %** practica en clubes.
+- Solo el **15,3 %** de quienes practican regularmente está federado.
+
+**Nuestra lectura:** la mayoría compite fuera de una federación con un control centralizado como el de la UAR. Ahí es donde el apto en papel queda más expuesto. Esta es una conclusión del equipo a partir de los datos, no algo que la encuesta afirme.
+
+### Cómo VitalPass responde a lo que falló en Mendoza
+
+| Lo que falló | Cómo está diseñado VitalPass |
 |---|---|
-| Cantidad de atletas y clubes en el NEA | **SUPUESTO** — falta fuente |
-| Porcentaje que compite con apto vencido o falso | **SUPUESTO** — falta fuente |
-| Testimonios de clubes, árbitros y médicos | ver [`docs/validacion.md`](docs/validacion.md) |
+| Se usó la firma de una médica sin que ella lo supiera | Cada médico firma con su propia cuenta (próximo paso: en la demo firma la cuenta de la app) |
+| Los aptos los emitía una empresa no habilitada | Solo emiten médicos con matrícula verificada en REFEPS |
+| Se descubrió años después, por una denuncia | Cada emisión queda registrada al instante en Hedera, auditable por cualquiera |
+
+Falsificar un certificado médico es delito en Argentina (Código Penal, arts. 295 y 296). Con VitalPass, cada firma queda atada a una matrícula para siempre, lo que vuelve rastreable cualquier falsificación.
 
 ## 2. Solución
 
@@ -45,7 +65,7 @@ En las ligas formativas y amateurs, el apto médico se presenta en papel o fotoc
 | Cuenta emisora | [`GA6UR7AOXNUD6XACPGSMAU5HD4EIS3G5M6WS5PLRFMYLS77W3GWSTKSR`](https://stellar.expert/explorer/testnet/account/GA6UR7AOXNUD6XACPGSMAU5HD4EIS3G5M6WS5PLRFMYLS77W3GWSTKSR) |
 | Transacción: subida del código del contrato | [`a9f81387…238d52`](https://stellar.expert/explorer/testnet/tx/a9f81387d707950aa058bda8ce7ef58cd4a9223b1e83168a4f851f86ae238d52) |
 | Transacción: despliegue del contrato | [`a4601315…baf057`](https://stellar.expert/explorer/testnet/tx/a4601315f4009e854d0c509d699a284880a517d6afbb666d6a20b344c1baf057) |
-| Transacción de registro de un apto (`register`) | `PENDIENTE` |
+| Transacción de registro de un apto emitido desde la app (`VP-FA6C9122`, llamada a `register`) | [`5b66a666…6d34`](https://stellar.expert/explorer/testnet/tx/5b66a666bbc5aa980413fd2e5713657deb6c38267a3e560c2c535501c10b6d34) |
 
 ### Hedera
 | Qué | Valor |
@@ -53,7 +73,7 @@ En las ligas formativas y amateurs, el apto médico se presenta en papel o fotoc
 | Cuenta (operator) | [`0.0.10999895`](https://hashscan.io/testnet/account/0.0.10999895) |
 | Topic HCS | [`0.0.11052106`](https://hashscan.io/testnet/topic/0.0.11052106) |
 | Transacción (mensaje de inicialización del topic) | [`0.0.10999895@1792176018.485508778`](https://hashscan.io/testnet/transaction/0.0.10999895-1792176018-485508778) |
-| Transacción de un apto emitido desde la app | `PENDIENTE` |
+| Transacción de un apto emitido desde la app (`VP-FA6C9122`) | [`0.0.10999895@1792184052.221661275`](https://hashscan.io/testnet/transaction/0.0.10999895-1792184052-221661275) |
 
 ## 5. Herramientas usadas
 
@@ -111,10 +131,24 @@ Usamos asistentes de IA (Claude, de Anthropic) para escribir y revisar código, 
 
 ## 12. Limitaciones y próximos pasos
 
-- El portal médico no tiene login en esta demo. Próximo paso: verificar la matrícula del médico contra el colegio médico y que cada médico firme con su propia cuenta.
+- El portal médico no tiene login en esta demo. Próximo paso: verificar la matrícula de cada médico en REFEPS y que cada uno firme con su propia cuenta.
 - La ficha de emergencia se ve con el código del QR. Próximo paso: acceso por rol (árbitro, servicio médico).
-- Piloto con una liga local (`PENDIENTE` según validación).
+- Piloto con una liga o unión local. Primer candidato a explorar: rugby, donde ya existe un control centralizado (UAR) y el dolor es repetir trámites al cambiar de club. `PENDIENTE` de confirmar.
 
-## Equipo
+## Modelo de negocio (hipótesis a validar)
 
-`PENDIENTE`
+- **Usuarios:** atletas, médicos, árbitros y profes.
+- **Quién paga:**
+  - **Clubes o deportistas:** una tarifa fija por cada certificado (emisión nueva, renovación, etc.).
+  - **Médicos:** una suscripción para usar la plataforma de emisión.
+- **Quién puede emitir:** solo médicos con la **matrícula verificada en la Red Federal de Registros de Profesionales de la Salud (REFEPS)**. La suscripción da acceso a la herramienta; la habilitación para firmar aptos depende únicamente de la matrícula, no del pago.
+- **A futuro:** el cobro se puede hacer en USDC directamente en el contrato de Stellar, de modo que el pago y el registro ocurran en la misma transacción.
+
+## Equipo — Grupo 14
+
+| Integrante | Rol |
+|---|---|
+| Tobías Roncati | Programación, diseño y pitch |
+| Leia Orgoñ | Programación y diseño |
+| Joaquín Ramírez | Validación y pitch |
+| Luciano Bellon | Negocio y validación |
