@@ -161,7 +161,7 @@ Usamos asistentes de IA (Claude, de Anthropic) para escribir y revisar código, 
 | Integrante | Rol |
 |---|---|
 | Tobías Roncati | Programación, diseño y pitch |
-| Leia Orgoñ | Programación y diseño |
+| Leia Orgoñ | Programación y diseño, Idea|
 | Joaquín Ramírez | Validación y pitch |
 | Luciano Bellon | Negocio y validación |
 | Virginia Gonzalez | Negocio, Economia y Video |
