@@ -5,6 +5,8 @@ Ideathon **NEA Tech 2026** (Corrientes) · Tracks **Stellar** y **Hedera**
 > El apto médico que se verifica en la cancha, no en una fotocopia.
 
 - **Demo:** https://vital-sport.vercel.app
+  - Atleta **apto** (ficticio): [https://vital-sport.vercel.app/validar?id=VP-7A1EC676](https://vital-sport.vercel.app/validar?id=VP-7A1EC676)
+  - Atleta **no apto** (ficticio): [https://vital-sport.vercel.app/validar?id=VP-8ECC1A04](https://vital-sport.vercel.app/validar?id=VP-8ECC1A04)
 - **Video (≤ 5 min):** en preparación
 - **Pitch deck (PDF):** se entrega por separado en la plataforma de cada track
 - **Evidencia de validación:** [`docs/validacion.md`](docs/validacion.md)
@@ -71,7 +73,8 @@ Falsificar un certificado médico es delito en Argentina (Código Penal, arts. 2
 | Cuenta emisora | [`GA6UR7AOXNUD6XACPGSMAU5HD4EIS3G5M6WS5PLRFMYLS77W3GWSTKSR`](https://stellar.expert/explorer/testnet/account/GA6UR7AOXNUD6XACPGSMAU5HD4EIS3G5M6WS5PLRFMYLS77W3GWSTKSR) |
 | Transacción: subida del código del contrato | [`a9f81387…238d52`](https://stellar.expert/explorer/testnet/tx/a9f81387d707950aa058bda8ce7ef58cd4a9223b1e83168a4f851f86ae238d52) |
 | Transacción: despliegue del contrato | [`a4601315…baf057`](https://stellar.expert/explorer/testnet/tx/a4601315f4009e854d0c509d699a284880a517d6afbb666d6a20b344c1baf057) |
-| Transacción de registro de un apto emitido desde la app (`VP-FA6C9122`, llamada a `register`) | [`5b66a666…6d34`](https://stellar.expert/explorer/testnet/tx/5b66a666bbc5aa980413fd2e5713657deb6c38267a3e560c2c535501c10b6d34) |
+| Registro desde la app de un atleta **apto** (`VP-7A1EC676`, llamada a `register`) | [`ca7ac8af…f424`](https://stellar.expert/explorer/testnet/tx/ca7ac8af82d2054b628727f2f233d169cfea285f2e26846d2e06fed4fa0ff424) |
+| Registro desde la app de un atleta **no apto** (`VP-8ECC1A04`, llamada a `register`) | [`4436a59d…0bc4`](https://stellar.expert/explorer/testnet/tx/4436a59dadc0d39abb748e09876d897463a5410cdd2955e70a5d3921a6a80bc4) |
 
 ### Hedera
 | Qué | Valor |
@@ -79,7 +82,8 @@ Falsificar un certificado médico es delito en Argentina (Código Penal, arts. 2
 | Cuenta (operator) | [`0.0.10999895`](https://hashscan.io/testnet/account/0.0.10999895) |
 | Topic HCS | [`0.0.11052106`](https://hashscan.io/testnet/topic/0.0.11052106) |
 | Transacción (mensaje de inicialización del topic) | [`0.0.10999895@1792176018.485508778`](https://hashscan.io/testnet/transaction/0.0.10999895-1792176018-485508778) |
-| Transacción de un apto emitido desde la app (`VP-FA6C9122`) | [`0.0.10999895@1792184052.221661275`](https://hashscan.io/testnet/transaction/0.0.10999895-1792184052-221661275) |
+| Apto emitido desde la app, atleta **apto** (`VP-7A1EC676`) | [`0.0.10999895@1792236551.856351461`](https://hashscan.io/testnet/transaction/0.0.10999895-1792236551-856351461) |
+| Apto emitido desde la app, atleta **no apto** (`VP-8ECC1A04`) | [`0.0.10999895@1792236713.429781322`](https://hashscan.io/testnet/transaction/0.0.10999895-1792236713-429781322) |
 
 ## 5. Herramientas usadas
 
@@ -99,6 +103,8 @@ Médico ──> /api/emitir ──┬─> Hedera HCS: {hash ficha, hash DNI, mat
 ```
 
 Si una red falla durante la demo, el apto se guarda igual pero se muestra como **SIMULADO / no registrado**: nunca se muestra un link inventado. El atleta `VP-DEMO` es un ejemplo ficticio que funciona sin conexión a la base.
+
+**Atletas de ejemplo** (todos los datos son ficticios): `VP-7A1EC676` es un atleta **apto** (el validador muestra verde) y `VP-8ECC1A04` es un atleta **no apto** (el validador muestra rojo). En los dos casos, la app consulta en vivo el contrato de Stellar y la huella de la ficha coincide.
 
 ## 7. Instalación (local)
 
