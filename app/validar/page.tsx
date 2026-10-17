@@ -65,7 +65,7 @@ function Validator() {
           value={code}
           onChange={(event) => setCode(event.target.value)}
           placeholder="VP-1A2B3C4D"
-          className="h-12 min-w-0 flex-1 rounded-xl border border-slate-300 bg-white px-3 font-mono uppercase outline-none focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
+          className="h-12 min-w-0 flex-1 rounded-xl border border-slate-300 bg-white px-3 font-mono uppercase text-slate-900 placeholder:text-slate-400 outline-none focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
         />
         <button type="submit" className="h-12 rounded-xl bg-[#0f3d2e] px-5 font-semibold text-white">Validar</button>
       </form>
