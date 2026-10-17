@@ -4,7 +4,7 @@ Ideathon **NEA Tech 2026** (Corrientes) · Tracks **Stellar** y **Hedera**
 
 > El apto médico que se verifica en la cancha, no en una fotocopia.
 
-- **Demo:** `PENDIENTE: link de Vercel`
+- **Demo:** `vital-sport.vercel.app`
 - **Video (≤ 5 min):** `PENDIENTE`
 - **Pitch deck (PDF):** `PENDIENTE`
 - **Evidencia de validación:** [`docs/validacion.md`](docs/validacion.md)
