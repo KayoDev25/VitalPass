@@ -23,7 +23,13 @@ Una cardióloga denunció que usaban su firma y su sello en estudios que nunca h
 **2. El apto es obligatorio y su gestión se repite (entrevista propia).**
 Un entrenador de rugby del Club San Patricio (Corrientes) nos confirmó que, sin los estudios que exige la Unión Argentina de Rugby (UAR), el jugador no puede ser habilitado en la planilla, y que **cada vez que un jugador cambia de club tiene que hacer todos los trámites de nuevo**. Detalle en [`docs/validacion.md`](docs/validacion.md).
 
-**3. El mercado es grande y mayormente no federado (ENAFYD 2023, UNSAM–UNaM).**
+**3. La evaluación previa casi nunca está documentada (registro de muerte súbita deportiva).**
+El Registro Argentino de Muerte Súbita Asociada al Deporte (RAMSAD) relevó, en un análisis preliminar, 27 episodios entre noviembre de 2025 y junio de 2026: 20 fallecidos, todos durante o poco después del esfuerzo. El grupo más numeroso fueron los deportistas amateurs recreativos, y fútbol y running concentraron cerca del 62 % de los casos. **Solo en el 29,6 % de los casos estaba documentada una evaluación cardiovascular previa** ([Infobae, 24/8/2026](https://www.infobae.com/salud/ciencia/2026/08/24/que-dice-el-registro-argentino-que-asocia-la-muerte-subita-deportiva-con-el-esfuerzo-fisico/)). VitalPass no reemplaza al médico, pero hace que esa evaluación quede registrada y se pueda verificar.
+
+**4. En cancha, se asume que los datos son verídicos.**
+Hoy la comprobación del apto es parcial: se revisa si hay tiempo o después de una tragedia; en general se asume que lo cargado es cierto. En una emergencia, los datos de salud a veces están a mano y a veces no. A los clubes y ligas sí les preocupa la responsabilidad legal. **VitalPass apunta a que no haya que asumir nada.**
+
+**5. El mercado es grande y mayormente no federado (ENAFYD 2023, UNSAM–UNaM).**
 Según la [Encuesta Nacional sobre Actividad Física y Deportes 2023](https://edicionesfhycs.unam.edu.ar/wp-content/uploads/2025/05/ENAFYD-2023-VF-con-ISBN.pdf) (5.458 casos, margen de error del 4 %):
 - En el NEA, el **45,7 %** de los encuestados hace actividad física o deporte de forma regular, y el fútbol tiene ahí la práctica más alta del país.
 - A nivel nacional, el **37,7 %** de quienes practican participa de competencias organizadas, y el **44,2 %** practica en clubes.

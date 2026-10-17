@@ -5,9 +5,9 @@
 ## Hipótesis que queremos confirmar o descartar
 
 1. El apto médico es obligatorio y su gestión es burocrática y repetitiva. — **CONFIRMADO** (entrevista 1): sin los estudios que exige la UAR, el jugador no se habilita en la planilla, y al cambiar de club se repiten todos los trámites.
-2. Circulan aptos médicos falsos y no hay forma ágil de detectarlos. — **CONFIRMADO** por un caso público: en la Liga Mendocina de Fútbol, un peritaje confirmó firmas médicas falsificadas en certificados de aptitud (ver "Datos y fuentes públicas"). Que el árbitro no pueda comprobarlo en cancha sigue como **SUPUESTO** para el NEA.
-3. En una emergencia, nadie tiene a mano el grupo sanguíneo, las alergias ni un contacto del atleta. — **SUPUESTO**
-4. A los clubes o ligas les preocupa la responsabilidad legal si un atleta sin apto válido sufre un accidente. — **SUPUESTO**
+2. Circulan aptos médicos falsos y no hay forma ágil de detectarlos. — **CONFIRMADO** por un caso público: en la Liga Mendocina de Fútbol, un peritaje confirmó firmas médicas falsificadas en certificados de aptitud (ver "Datos y fuentes públicas"). En cancha, la comprobación es **parcial**: se revisa si hay tiempo o después de una tragedia; en general se **asume** que los datos cargados son verídicos. VitalPass apunta a que no haya que asumir nada.
+3. En una emergencia, nadie tiene a mano el grupo sanguíneo, las alergias ni un contacto del atleta. — **PARCIAL**: depende del club y del caso; a veces los datos están disponibles y a veces no.
+4. A los clubes o ligas les preocupa la responsabilidad legal si un atleta sin apto válido sufre un accidente. — **CONFIRMADO** (relevado por el equipo).
 
 ## Guía de entrevista (4 preguntas, 5 minutos)
 
@@ -32,7 +32,7 @@
 | Practicantes que compiten en torneos organizados / en clubes / federados (país) | ENAFYD 2023, secciones 2.3, 2.6 y 2.7 | 37,7 % / 44,2 % / 15,3 % — **con fuente** |
 | Reglamentos de ligas que exigen apto médico | Rugby: la UAR exige estudios para habilitar al jugador (según entrevista 1; falta link al reglamento) | Parcial |
 | Certificados de aptitud falsificados en una liga de fútbol | [Los Andes, 2/10/2025](https://www.losandes.com.ar/deportes/escandalo-la-liga-mendocina-peritajes-confirmaron-firmas-falsas-certificados-medicos-n5965005) y [Diario UNO, 18/2/2026](https://www.diariouno.com.ar/politica/certificados-truchos-la-liga-mendocina-la-empresa-que-los-aptos-fisicos-no-estaba-habilitada-n1527619) | Más de 900 documentos sospechados, 112 planillas con firmas falsas (las cifras varían entre notas) — **con fuente** |
-| Casos públicos de muerte súbita o accidentes en el deporte amateur | | **SUPUESTO** — falta fuente |
+| Muerte súbita asociada al deporte | [Infobae, 24/8/2026](https://www.infobae.com/salud/ciencia/2026/08/24/que-dice-el-registro-argentino-que-asocia-la-muerte-subita-deportiva-con-el-esfuerzo-fisico/), sobre el Registro Argentino de Muerte Súbita Asociada al Deporte (RAMSAD), análisis preliminar | 27 episodios (20 fallecidos) entre nov. 2025 y jun. 2026; todos durante o poco después del esfuerzo; el grupo más numeroso, deportistas amateurs recreativos; fútbol y running, alrededor del 62 %; **solo el 29,6 % tenía documentada una evaluación cardiovascular previa** — **con fuente** |
 
 ## Qué aprendimos
 
