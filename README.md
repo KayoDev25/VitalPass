@@ -5,8 +5,8 @@ Ideathon **NEA Tech 2026** (Corrientes) · Tracks **Stellar** y **Hedera**
 > El apto médico que se verifica en la cancha, no en una fotocopia.
 
 - **Demo:** https://vital-sport.vercel.app
-- **Video (≤ 5 min):** `PENDIENTE`
-- **Pitch deck (PDF):** `PENDIENTE`
+- **Video (≤ 5 min):** en preparación
+- **Pitch deck (PDF):** se entrega por separado en la plataforma de cada track
 - **Evidencia de validación:** [`docs/validacion.md`](docs/validacion.md)
 
 ---
@@ -139,7 +139,7 @@ Usamos asistentes de IA (Claude, de Anthropic) para escribir y revisar código, 
 
 - El portal médico no tiene login en esta demo. Próximo paso: verificar la matrícula de cada médico en REFEPS y que cada uno firme con su propia cuenta.
 - La ficha de emergencia se ve con el código del QR. Próximo paso: acceso por rol (árbitro, servicio médico).
-- Piloto con una liga o unión local. Primer candidato a explorar: rugby, donde ya existe un control centralizado (UAR) y el dolor es repetir trámites al cambiar de club. `PENDIENTE` de confirmar.
+- Piloto con una liga o unión local. Primer candidato a explorar: rugby, donde ya existe un control centralizado (UAR) y el dolor es repetir trámites al cambiar de club. Club o liga: a confirmar.
 
 ## Modelo de negocio (hipótesis a validar)
 

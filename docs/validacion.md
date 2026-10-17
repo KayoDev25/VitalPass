@@ -5,9 +5,9 @@
 ## Hipótesis que queremos confirmar o descartar
 
 1. El apto médico es obligatorio y su gestión es burocrática y repetitiva. — **CONFIRMADO** (entrevista 1): sin los estudios que exige la UAR, el jugador no se habilita en la planilla, y al cambiar de club se repiten todos los trámites.
-2. Circulan aptos médicos falsos y no hay forma ágil de detectarlos. — **CONFIRMADO** por un caso público: en la Liga Mendocina de Fútbol, un peritaje confirmó firmas médicas falsificadas en certificados de aptitud (ver "Datos y fuentes públicas"). En cancha, la comprobación es **parcial**: se revisa si hay tiempo o después de una tragedia; en general se **asume** que los datos cargados son verídicos. VitalPass apunta a que no haya que asumir nada.
-3. En una emergencia, nadie tiene a mano el grupo sanguíneo, las alergias ni un contacto del atleta. — **PARCIAL**: depende del club y del caso; a veces los datos están disponibles y a veces no.
-4. A los clubes o ligas les preocupa la responsabilidad legal si un atleta sin apto válido sufre un accidente. — **CONFIRMADO** (relevado por el equipo).
+2. Circulan aptos médicos falsos y no hay forma ágil de detectarlos. — **CONFIRMADO** por un caso público: en la Liga Mendocina de Fútbol, un peritaje confirmó firmas médicas falsificadas en certificados de aptitud (ver "Datos y fuentes públicas"). En cancha, la comprobación es **parcial**: se revisa si hay tiempo o después de una tragedia; en general se **asume** que los datos cargados son verídicos (relevado por el equipo). VitalPass apunta a que no haya que asumir nada.
+3. En una emergencia, nadie tiene a mano el grupo sanguíneo, las alergias ni un contacto del atleta. — **PARCIAL**: depende del club y del caso; a veces los datos están disponibles y a veces no (relevado por el equipo).
+4. A los clubes o ligas les preocupa la responsabilidad legal si un atleta sin apto válido sufre un accidente. — **CONFIRMADO** por Tobías Roncati, integrante del equipo.
 
 ## Guía de entrevista (4 preguntas, 5 minutos)
 
@@ -20,7 +20,7 @@
 
 | # | Rol (sin nombre si no autoriza) | Club / liga / deporte | Fecha y medio | Qué dijo (resumen) | Evidencia |
 |---|---|---|---|---|---|
-| 1 | Entrenador de rugby | Club San Patricio, Corrientes (rugby, UAR) | 16/10/2026 · (completar: medio) | Ningún jugador puede participar si no completa los estudios que pide la UAR: sin eso no se lo puede habilitar en la planilla. Cuando un jugador cambia de club, tiene que hacer todos los trámites de nuevo. | Sin registro guardado |
+| 1 | Entrenador de rugby | Club San Patricio, Corrientes (rugby, UAR) | 16/10/2026 · WhatsApp | Ningún jugador puede participar si no completa los estudios que pide la UAR: sin eso no se lo puede habilitar en la planilla. Cuando un jugador cambia de club, tiene que hacer todos los trámites de nuevo. | Sin registro guardado |
 | 2 | | | | | |
 | 3 | | | | | |
 
