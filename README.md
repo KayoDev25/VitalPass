@@ -13,15 +13,33 @@ Ideathon **NEA Tech 2026** (Corrientes) · Tracks **Stellar** y **Hedera**
 
 ## 1. Problema
 
-En las ligas formativas y amateurs, el apto médico se presenta en papel o fotocopia. En la cancha, el árbitro o el profe no tiene forma de comprobar que el apto es real, de quién es y si está vigente. Si hay una emergencia (golpe en la cabeza, descompensación), nadie tiene a mano el grupo sanguíneo, las alergias ni un contacto.
+En las ligas formativas y amateurs, el apto médico se presenta en papel o fotocopia. En la cancha, el árbitro o el profe no tiene forma de comprobar que el apto es real, de quién es y si está vigente. Si hay una emergencia (golpe en la cabeza, descompensación), nadie tiene a mano el grupo sanguíneo, las alergias ni un contacto. Y cada vez que un jugador cambia de club, repite todos los trámites.
 
-| Dato | Estado |
+### Evidencia
+
+**1. Los certificados falsos existen, a escala (caso Liga Mendocina de Fútbol).**
+Una cardióloga denunció que usaban su firma y su sello en estudios que nunca hizo, y un peritaje caligráfico lo confirmó. Hay más de 900 documentos bajo sospecha, alrededor de 800 jugadores potencialmente afectados y al menos 112 planillas con firmas falsificadas. En allanamientos se encontraron certificados falsificados listos para usar ([Los Andes, 2/10/2025](https://www.losandes.com.ar/deportes/escandalo-la-liga-mendocina-peritajes-confirmaron-firmas-falsas-certificados-medicos-n5965005)). La empresa que emitía los aptos no estaba habilitada por el Ministerio de Salud provincial; prestó el servicio desde 2022 hasta mediados de 2025 e incluía a jugadores menores de edad ([Diario UNO, 18/2/2026](https://www.diariouno.com.ar/politica/certificados-truchos-la-liga-mendocina-la-empresa-que-los-aptos-fisicos-no-estaba-habilitada-n1527619)).
+
+**2. El apto es obligatorio y su gestión se repite (entrevista propia).**
+Un entrenador de rugby del Club San Patricio (Corrientes) nos confirmó que, sin los estudios que exige la Unión Argentina de Rugby (UAR), el jugador no puede ser habilitado en la planilla, y que **cada vez que un jugador cambia de club tiene que hacer todos los trámites de nuevo**. Detalle en [`docs/validacion.md`](docs/validacion.md).
+
+**3. El mercado es grande y mayormente no federado (ENAFYD 2023, UNSAM–UNaM).**
+Según la [Encuesta Nacional sobre Actividad Física y Deportes 2023](https://edicionesfhycs.unam.edu.ar/wp-content/uploads/2025/05/ENAFYD-2023-VF-con-ISBN.pdf) (5.458 casos, margen de error del 4 %):
+- En el NEA, el **45,7 %** de los encuestados hace actividad física o deporte de forma regular, y el fútbol tiene ahí la práctica más alta del país.
+- A nivel nacional, el **37,7 %** de quienes practican participa de competencias organizadas, y el **44,2 %** practica en clubes.
+- Solo el **15,3 %** de quienes practican regularmente está federado.
+
+**Nuestra lectura:** la mayoría compite fuera de una federación con un control centralizado como el de la UAR. Ahí es donde el apto en papel queda más expuesto. Esta es una conclusión del equipo a partir de los datos, no algo que la encuesta afirme.
+
+### Cómo VitalPass responde a lo que falló en Mendoza
+
+| Lo que falló | Cómo está diseñado VitalPass |
 |---|---|
-| Cantidad de deportistas en el NEA | Aprox. 50.000 según la Secretaría de Deportes — **falta link a la fuente** |
-| Porcentaje que compite con apto vencido o falso | **SUPUESTO** — falta fuente |
-| Entrevistas | 1 realizada (entrenador de rugby, Club San Patricio, Corrientes) — ver [`docs/validacion.md`](docs/validacion.md) |
+| Se usó la firma de una médica sin que ella lo supiera | Cada médico firma con su propia cuenta (próximo paso: en la demo firma la cuenta de la app) |
+| Los aptos los emitía una empresa no habilitada | Solo emiten médicos con matrícula verificada en REFEPS |
+| Se descubrió años después, por una denuncia | Cada emisión queda registrada al instante en Hedera, auditable por cualquiera |
 
-**Lo que confirmamos al validar:** el entrenador de rugby del Club San Patricio (Corrientes) nos confirmó que el apto médico es un requisito obligatorio: sin los estudios que exige la Unión Argentina de Rugby (UAR), el jugador no puede ser habilitado en la planilla. Y la gestión es pesada: **cada vez que un jugador cambia de club, tiene que hacer todos los trámites de nuevo**. VitalPass resuelve ese dolor con un apto **portable y verificable**, que viaja con el atleta y que cualquier club o liga puede comprobar sin repetir papeles.
+Falsificar un certificado médico es delito en Argentina (Código Penal, arts. 295 y 296). Con VitalPass, cada firma queda atada a una matrícula para siempre, lo que vuelve rastreable cualquier falsificación.
 
 ## 2. Solución
 
