@@ -158,3 +158,4 @@ Usamos asistentes de IA (Claude, de Anthropic) para escribir y revisar código, 
 | Leia Orgoñ | Programación y diseño |
 | Joaquín Ramírez | Validación y pitch |
 | Luciano Bellon | Negocio y validación |
+| Virginia Gonzalez | Negocio, Economia y Video |
